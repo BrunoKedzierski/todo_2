@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block content %}
+   <form class="form-horizontal" action='' method="POST">
+   {{ form.hidden_tag() }}
+   {{ form.username.label }}
+   {{ form.username }}
+   {{ form.password.label }}
+   {{ form.password }}
+   {{ form.confirm.label }}
+   {{ form.confirm }}
+   {{ form.submit(class="btn btn-outline-info") }}
+
+
+
+
+</form>
+{% endblock content %}
